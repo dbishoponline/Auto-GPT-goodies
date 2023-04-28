@@ -1,3 +1,45 @@
+# Auto-GPT with Goodies
+
+## Requirements
+
+- macos
+- homebrew
+- go
+- go-task
+- python
+
+## How to Use?
+
+**Install and Start AutoGPT**
+
+1. Duplicate `.env.default` -> `.env`
+2. Add config variables to `.env`
+3. Add AutoGPT program config to `ai_settings.yaml` (Optional)
+4. Run the following commands to run AutoGPT program
+
+      ```bash
+      task install
+      task start
+      ```
+
+**Available tasks for this project:**
+
+```bash
+- docker:down:          stops docker container
+- docker:restart:       restarts docker container
+- docker:up:            starts docker container
+- install:              installs all deps and stuff to run application locally (must have ZSH)
+- install:m2:           installs all deps and stuff to run application locally on arm64 (must have ZSH)
+- shell:                starts a python/pipenv shell - pipenv shell
+- start:                runs the AutoGPT program
+- start:continuous:     runs the AutoGPT program continuously
+- start:gpt3:           runs the AutoGPT program with gpt3.5
+- test:                 run tests
+- test:coverage:        run test coverage report
+```
+
+---
+
 # Auto-GPT: An Autonomous GPT-4 Experiment
 
 [![Unit Tests](https://img.shields.io/github/actions/workflow/status/Significant-Gravitas/Auto-GPT/ci.yml?label=unit%20tests)](https://github.com/Significant-Gravitas/Auto-GPT/actions/workflows/ci.yml)
